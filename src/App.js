@@ -8,6 +8,7 @@ function App() {
     <>
     <h1>Bienvenidos a</h1>
     <h2>Galeria virtual</h2>
+    <Navbar/>
     </>
   );
 }
