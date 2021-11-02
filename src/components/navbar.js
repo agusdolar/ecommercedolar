@@ -15,6 +15,9 @@ function Navbar() {
                     <li class="nav-item">
                         <a class="nav-link" href="#">Quienes somos</a>
                     </li>
+                    <li class="nav-item">
+                    </li>
+                        <a class="nav-link" href="#"><img className="carrito" src="https://cdn-icons-png.flaticon.com/128/3523/3523887.png"/></a>
                 </ul>
             </nav>
         </>
