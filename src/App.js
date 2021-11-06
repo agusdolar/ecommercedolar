@@ -3,13 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Productodestacado from './components/Productodestacado';
 import Itemlistcontainer from './components/Itemlistcontainer';
+import ItemCount from "./components/ItemCount"
+
+
 
 function App() {
   return (
     <>
-    <h1 className="App">Bienvenidos a</h1>
-    <h2 className="App">Galeria virtual</h2>
+     
     <Navbar/>
+    <ItemCount />
     <Itemlistcontainer/>
     <h3>Productos Destacados</h3>
     <hr />
