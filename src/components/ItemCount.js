@@ -2,25 +2,28 @@
 import React, { useState } from 'react';
 
 
-function ItemCount() {
+function ItemCount(props) {
 
     const [count, setcount] = useState(0);
 
     const increment = () => {
-
-        setcount(count + 1);
+     if (count < props.max) setcount(count + 1);
     }
 
     const resta = () => {
 
-        setcount(count - 1);
+       if (count > 1 ) setcount(count - 1);
+    }
+
+    const agregar = () => {
+    console.log("Se agrego al carrito", count, "productos")
     }
 
     return (
         <>
             <div className="divcountgral">
                 <div>
-                    <p className="pcountcarrito">Añadir al carrito</p>
+                    <button onClick={agregar} className="btncount">Añadir al carrito</button>
         
                 </div>
                 <div className="divcount">

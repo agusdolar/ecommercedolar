@@ -68,14 +68,19 @@
   text-shadow: 1px 1px 1px black;
 }
 
+.body {
+  font-family: 'Fredericka the Great', cursive;
+}
+
 .pcountcarrito {
-  color: rgb(165, 165, 182);
+  color: rgb(9, 129, 241);
   font-size: 100%;
   font-weight:bold;
   text-shadow: 1px 1px 1px black;
   padding-right: 2vw;
   align-content:space-between;
   margin-right: 2vw;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 .divcountgral{
@@ -90,3 +95,4 @@ width: 100%;
 padding-right: 1vw;
 
 }
+
