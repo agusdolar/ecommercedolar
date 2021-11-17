@@ -2,17 +2,29 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Productodestacado from './components/Productodestacado';
-import Itemlistcontainer from './components/Itemlistcontainer';
 import ItemCount from './components/ItemCount'
+import customFetch from './components/ItemDetail';
+import { useEffect, useState } from 'react';
+
 
 
 
 function App() {
+
+  const [datos, setDatos] = useState([]);
+
+  useEffect(() => {
+    customFetch()
+    .then(result => setDatos(result))
+    .catch(err => console.log(err))
+  }, []);
+  
+
   return (
     <>
      
     <Navbar/>
-    <Itemlistcontainer/>
+    
     <h3>Productos Destacados</h3>
     <ItemCount max={6} initial={1} />
     <hr />
@@ -22,6 +34,12 @@ function App() {
     <hr />
     < Productodestacado nombre="Catedral" que="Representacion Catedral Cordoba" autor="Gonzalo Dolar" />
     <hr />
+    <h2>Productos:</h2>
+    <ol>
+      {
+      datos.map((dato) => <li key={dato.id}>{dato.name}, {dato.description} <img src={dato.image[0]}/> </li> )
+      }
+    </ol>
     
     </>
     

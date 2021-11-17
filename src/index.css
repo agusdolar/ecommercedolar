@@ -3,7 +3,7 @@ body {
   font-family: 'Fredericka the Great', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./img/fondo.png");
+  background-color: white;
 }
 
 code {
