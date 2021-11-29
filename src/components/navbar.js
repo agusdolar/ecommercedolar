@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import SearchForm from "./SearchForm";
 
 function Navbar() {
     return (
-        
+        <div >
             <nav className="navbar navbar-dark bg-dark">
                 <ul className="nav nav-tabs">
                    
@@ -32,10 +33,15 @@ function Navbar() {
                         <a className="nav-link" href="Quienes somos">Quienes somos</a>
                         </Link>
                     </li>
+
+                    <li className="nav-item"><Link to='/searchform'>
+                        <a className="nav-link" href="Quienes somos"> <SearchForm /></a>
+                        </Link>
+                    </li>
                       
                 </ul>
             </nav>
-        
+            </div>
     );
 }
 
